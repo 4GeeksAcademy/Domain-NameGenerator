@@ -1,1 +1,48 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  text-align: center;
+  padding: 5px 0;
+}
+.pronouns {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.pronouns {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.adj {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nouns {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body {
+  background-color: rgb(226, 226, 226);
+  font-family: "Signika Negative", sans-serif;
+}
+.words-domain-box {
+  display: flex;
+  margin-top: 25px;
+}
+.words-list {
+  margin-left: auto;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 5%;
+  padding: 15px;
+}
+.domain-combo {
+  margin-right: auto;
+  margin-left: 50px;
+  background-color: white;
+  border-radius: 5%;
+  padding: 15px;
+}

@@ -3,26 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Excuse Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Domain Name Generator</h1>
+      <!-- <h1 id="the-excuse" class="mt-5">domainnamegenerator.com</h1> -->
+      <!-- <button id="btn">Generate Domains</button> -->
+      <div class="pronouns">
+        <label for="pronouns">Pronouns:</label>
+        <input type="text" id="pronouns" placeholder="Enter pronouns" />
+        <br />
+      </div>
+      <div class="adj">
+        <label for="adjectives">Adjectives:</label>
+        <input type="text" id="adjectives" placeholder="Enter adjectives" />
+        <br />
+      </div>
+      <div class="nouns">
+        <label for="nouns">Nouns:</label>
+        <input type="text" id="nouns" placeholder="Enter nouns" />
+        <br />
+      </div>
+      <button id="addInput" class="btn btn-secondary">Add More</button>
+      <button id="generateDomains" class="btn btn-primary">
+        Generate Domain Combinations
+      </button>
+      <div class="words-domain-box">
+        <div class="words-list">
+          <h4>Words List:</h4>
+          <h5>pronouns:</h5>
+          <ul id="added-words-pronoun"></ul>
+          <h5>adjectives:</h5>
+          <ul id="added-words-adjective"></ul>
+          <h5>nouns:</h5>
+          <ul id="added-words-noun"></ul>
+        </div>
+        <div class="domain-combo">
+          <h3>Domains:</h3>
+          <p id="domain-combinations"></p>
+        </div>
       </div>
     </div>
   </body>
